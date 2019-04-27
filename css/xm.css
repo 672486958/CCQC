@@ -1,0 +1,461 @@
+*{
+    margin: 0;padding: 0;
+}
+body{font-size:16px;}
+a{text-decoration: none; color:#000}
+
+.my_bgcolor{
+background: #eeeeee;
+height:120px;
+width:100%;
+}
+.my_header{height:450px;width:1200px;margin:0 auto;margin-top:50px;position: relative;}
+ul{list-style:none;}
+.my_ul{display: flex;float: right;}
+ul.my_ul li{padding-top: 10px;margin: 0  60px; font-weight: bold;}
+.my_li_1{ height:5px; background:red;}
+.my_tatle{position: absolute; top:-25px; right:18px;}
+/* 轮播*/
+#container{
+	width:1200px;
+	height:450px;
+	position:relative;
+	overflow:hidden;
+    border-radius:10px;
+    margin: 0 auto;
+}
+.item{
+	position:absolute;
+}
+ 
+#tabs{
+	position:absolute;
+	right:545px;
+	bottom:20px;
+}
+.tab{
+	float:left;
+	margin-right:10px;
+	width:6px;
+	height:6px;
+	border:3px solid rgba(184,178,182,.8);
+	border-radius:50%;
+	background:#989196;
+	cursor:pointer;
+}
+.active{
+	background:#fff;
+	border-color:#999497;
+}
+.btn{
+	position:absolute;
+	top:50%;
+	margin-top:-35px;
+	width:40px;
+	height:70px;
+	color:#d6d3d5;
+	font-size:36px;
+	line-height:70px;
+	text-align:center;
+	cursor:pointer;
+}
+.btn:hover{
+	background:rgba(127,120,125,0.8);
+}
+.prev{
+	position:absolute;
+	left:0px;
+    border-radius:0 5px 5px 0;
+    background-image:url(arrow-left.png) 	
+}
+.next{
+	position:absolute;
+	right:0;
+    border-radius:5px 0 0 5px;
+    background-image:url(arrow-right.png)
+}
+    /**/
+.my_h1_{margin-top:20px;
+  text-align: center;
+  font-weight:bolder;
+  margin-bottom:20px;
+}
+
+.my_f1{
+    width:1200px;
+    height: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;                
+}
+
+/*第一张上下过度图片效果*/
+.my_f1_1{
+width:788px;
+height:350px;
+background:#fff url(../img/img20.jpg) no-repeat 50% 50%;
+position: relative;
+overflow: hidden;
+}
+.my_f1_f1{
+  width:788px;
+  height:350px;
+  position:absolute;
+  background: rgba(0,0,0,0.5);
+  top: 90%;
+  transition:1s;
+}
+.my_f1_f1>p{
+    color: #fff;
+    text-align: center;
+    z-index: 1000;
+}
+.my_f1_1:hover .my_f1_f1{
+    top:0;
+}
+.my_f1_1:hover .my_f1_f1 p{
+    line-height: 350px;
+}
+
+
+/*第二张上下过度图片效果*/
+.my_f2{
+    width:400px;
+    height:350px;
+    }
+
+   
+.my_f1_2{
+    width:400px;
+     height: 169px;
+     margin-bottom:6px;
+     background:#fff url(../img/img19.jpg) no-repeat 50% 50% ;
+     position:relative;
+     overflow:hidden;
+   }
+.my_f1_f2{
+    width:400px;
+    height: 169px; 
+    position: absolute;
+    background:rgba(0,0,0,0.5);
+    top: 90%;
+    transition: 1s;
+} 
+
+ .my_f1_2:hover .my_f1_f2{
+    top:0;
+}  
+.my_f1_f2{
+    color:#fff;
+    text-align:center;
+}
+.my_f1_2:hover .my_f1_f2 p{
+    line-height:169px;
+}
+
+/*第三张上下过度图片效果*/
+.my_f1_3{
+    margin-top: 12px;
+ width:400px;
+  height: 169px;
+  position: relative;
+  overflow:hidden;  
+  background:#fff url(../img/img17.jpg) no-repeat 50% 50%; 
+}
+.my_f1_f3{
+    width:400px;
+    height: 169px;
+ background:rgba(0,0,0,0.5);
+ position:absolute;
+ top:90%;
+ transition:1s;
+}
+.my_f1_3:hover .my_f1_f3{
+    top:0;
+}
+.my_f1_f3 p{
+    color:#fff;
+    text-align:center;
+}
+.my_f1_3:hover .my_f1_f3 p{
+    /* line-height: 169px; */
+    position: absolute;
+    top:40%;
+    display: block;   
+}
+
+/*第二部分*/
+.my_f2_f{
+    text-align: center;
+}
+.my_two{
+    width:100%;
+    height:377px;
+    margin:0 auto;
+    background: #eeeeee;
+}
+.my_tow_1{
+width:1200px;
+height:377px;
+display: flex;
+flex-wrap:wrap;
+justify-content: space-around;
+align-items:center;
+margin:0 auto;
+transition:1s
+}
+.my_tow_1 a p{
+    text-align: center;
+}
+.my_tow_1 a:hover p {
+    color:red;
+}
+
+
+.d1{
+    transition:1s   
+}
+.d1:hover{
+    transform:rotate(360deg);
+}
+.d2{
+    transition:1s   
+}
+.d2:hover{
+    transform:rotate(360deg);
+}
+.d3{
+    transition:1s   
+}
+.d3:hover{
+    transform:rotate(360deg);
+}
+.d4{
+    transition:1s   
+}
+.d4:hover{
+    transform:rotate(360deg);
+}
+
+.my_f3{
+    margin-top:20px;
+    text-align: center;
+}
+.my_f3_a{
+    width:1200px;
+    height:300px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    padding-top:20px;
+}
+
+.my_f3_d1{
+    font-size:14px;
+    transition:1s;
+}
+.my_f3_d1:hover{
+    transform:scale(1.05);
+   
+}
+.my_f3_a :hover p{
+color:red;
+
+}
+
+.my_f3_d2{
+    font-size:14px;
+    transition:1s;
+}
+.my_f3_d2:hover{
+    transform:scale(1.05);
+}
+.my_f3_d3{
+    font-size:14px;
+    transition:1s;
+}
+.my_f3_d3:hover{
+    transform:scale(1.05);
+}
+.my_f3_d4{
+    font-size:14px;
+    transition:1s;
+}
+.my_f3_d4:hover{
+    transform:scale(1.05);
+}
+
+.my_f3_a p{
+    margin-top: 10px;
+}
+.my_hr{
+    color:#959696;
+    margin-top:-10px;
+    margin-bottom:30px;
+}
+
+
+
+.my_foot{
+    width:1250px;
+    height:120px;
+    margin:0 auto;
+}
+.my_sss{
+    width:750px;
+    float: left;
+}
+.my_foot ul li {
+
+    color:#959696;
+    float:left;
+     margin-right:border;
+}
+.my_foot ul li a{
+    font-size:12px;
+    color:#959696;
+   
+}
+.my_foot_1{
+    font-size:12px;
+    color:#959696;
+    margin-left:96px;
+    margin-top:10px;
+}
+.my_foot_2{
+    width:461px;
+    height:49px;
+    float:right;
+    display: flex;
+    justify-content: space-around;
+}
+.my_foot_f1{
+    height:49px;
+    width:93px;
+    background:#f3f3f3;
+    text-align: center;
+}
+.my_foot_f1 p{
+    font-size:12px;
+    color:#959696;
+}
+.my_foot_f2{
+    height:49px;
+    width:110px;
+    background:#f3f3f3;
+    text-align: center;
+}
+.my_foot_f2 p{
+    font-size: 12px;
+    color:#959696
+}
+
+/*外加一块 */
+.my_w1{
+    width:1200px;
+    height:360px;
+    margin:5px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+}
+.my_w2{
+    width:788px;
+    height:350px;
+   background-image: url(../img/img28.jpg);
+   position: relative;
+   overflow: hidden;
+}
+.my_w2_1{
+     width:788px;
+     height:350px;
+     position:absolute;
+     background: rgba(0,0,0,0.5);
+     top: 90%;
+    transition:1s;
+}
+.my_w2_1>p{
+    color:#fff;
+    text-align: center;
+}
+
+.my_w2:hover .my_w2_1{
+    top:0
+}
+.my_w2:hover{
+    line-height: 350px;
+}
+
+.my_w3_1{
+    width:400px;
+    height:169px;
+    background-image:url(../img/img27.jpg);
+    margin-bottom:12px;
+    margin-left:12px;
+    position: relative;
+    overflow: hidden;
+}
+.my_w3_a{
+    width:400px;
+    height:169px;
+    top:85%;
+    position: absolute;
+    background:rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.my_w3_a p{
+    color:#fff;
+    text-align: center;
+}
+.my_w3_1:hover .my_w3_a{
+  top:0;
+}
+
+.my_w3_1:hover {
+    line-height: 169px;
+}
+.my_w3_2{
+    width:400px;
+    height:169px;
+    background-image:url(../img/img29.jpg);
+    margin-left:12px;
+    position: relative;
+    overflow: hidden;
+}
+.my_w3_b{
+    width:400px;
+    height:169px;
+    top:85%;
+    position: absolute;
+    background:rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.my_w3_2:hover .my_w3_b{
+    top:0;
+}
+.my_w3_b p{
+    color:#fff;
+    text-align: center;
+}
+.my_w3_2:hover{
+    line-height: 169px;
+}
+
+.gao{
+    width:1200px;
+    height:15px;
+    margin:0 auto;
+}
+
+/**拖拽 **/
+#pop{
+width:60px;
+height:60px;
+background-image:url(../img/loading.gif);
+position: fixed;
+z-index: 1000;
+top:115px;
+left:20px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+     <div class="my_header">
+        <div class="my_header1">
+         <img  class="site1" src="img/changan.png" alt="">
+          <div class="wrap">
+              <ul>
+                <li><a href="#">首页</a> </li>
+                 
+                <li><a href="#" class="quanche">全车系列</a> 
+               <div id="xiala">
+             <table>
+                <tr>
+                    <td><a href="#">哈弗</a></td>
+                    <td><a href="#"><img src="img/cars_img1.png"></a></td>
+                    <td><a href="#"><img src="img/cars_img2.png"></a></td>
+                    <td><a href="#"><img src="img/cars_img3.png"></a></td>
+                    <td><a href="#"><img src="img/cars_img4.png"></a></td>
+                    <td><a href="#"><img src="img/cars_img5.png"></a></td>
+                    <td><a href="#"><img src="img/cars_img6.png"></a></td>
+                   <td><a href="#"><img src="img/cars_img7.png"></a></td>
+                   <td><a href="#"><img src="img/cars_img8.png"></a></td>
+                   <td><a href="#"><img src="img/cars_img9.png"></a></td>
+                 </tr>
+                 <tr>
+                   <td></td>
+                   <td><a href="#"><img src="img/cars_img10.png"></a></td>
+                   <td><a href="#"><img src="img/cars_img11.png"></a></td>
+                   <td><a href="#"><img src="img/cars_img12.png"></a></td>
+                 </tr>
+                 <tr>
+                  <td><a href="#">WEY</a></td>
+                   <td><a href="#"><img src="img/cars_img13.png"></td>
+                   <td><a href="#"><img src="img/cars_img14.png"></td>
+                   <td><a href="#"><img src="img/cars_img15.png"></td>
+                   <td><a href="#"><img src="img/cars_img16.png"></td>
+                 </tr>
+                  <tr>
+                  <td><a href="#">长城</a></td>
+                    <td><a href="#"><img src="img/cars_img16.png"></td>
+                    <td><a href="#"><img src="img/cars_img17.png"></td>
+                    <td><a href="#"><img src="img/cars_img18.png"></td>
+                    <td><a href="#"><img src="img/cars_img19.png"></td>
+                    <td><a href="#"><img src="img/cars_img20.png"></td>
+                    <td><a href="#"><img src="img/cars_img21.png"></td>
+                    <td><a href="#"><img src="img/cars_img23.png"></td>
+                  </tr>
+                  <tr>
+                  <td><a href="#">欧拉</a></td>
+                   <td><a href="#"><img src="img/cars_img22.png"></td>
+                  </tr>
+                </table>
+              </div>
+              </li>
+                <li>
+                   <a href="#">购车工具</a>
+                   <ul >
+                       <li>预约试驾</li>
+                       <li>经销商查询</li>
+                       <li>贷款购车</li>
+                       <li>购车计算器</li>
+                       <li>车型对比</li>
+                   </ul>  
+                </li>
+                <li>
+                  <a href="#">车主服务</a>
+                     <ul>
+                        <li>服务理念</li>
+                        <li>服务流程</li>
+                        <li>服务商查询</li>
+                        <li>纯正配件</li>
+                        <li>车主学堂</li>
+                        <li>原装精品</li>
+                     </ul>
+                </li>
+                <li>
+                  <a href="#">关于长城</a>
+                   <ul>
+                      <li>新闻活动</li>
+                      <li>研发实力</li>
+                      <li>奖项荣誉</li>
+                      <li>企业概况</li>
+                      <li>企业文化</li>
+                      <li>企业成员</li>
+                      <li>招贤纳士</li>
+                      <li>品牌理念</li>
+                      <li>全球化热线&nbsp;</li>
+                      <li>发展历程</li>
+                   </ul>
+                </li> 
+              </ul>
+          </div>
+ 
+         <img  class="site"src="img/tatle.png" alt="">
+        </div>      
+     </div>
+   
+
+
+
+
+
+
+
+
+
+
+     <script src="js/jquery-1.11.3.js"></script>
+      <script>
+ $(document).ready(function(){
+					 //获取元素 				
+					 var liArr = $(".wrap>ul>li"); 			
+					 //鼠标移入显示二级菜单 				
+					 liArr.mouseenter(function(){ 
+ //jQuery对象绑定的事件中的this也代指js中的DOM对象 
+				 					$(this).children("ul").stop().slideDown(300); 				}); 
+						 //鼠标移出隐藏菜单 			
+						 liArr.mouseleave(function(){ 					 					$(this).children("ul").stop().slideUp(300); 				}); 			}); 
+
+
+// xiala
+  
+      </script>
+</body>
+</html>

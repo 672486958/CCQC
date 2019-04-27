@@ -1,0 +1,68 @@
+*{
+ margin:0;
+ padding:0;
+}
+.my_header{
+  width:100%;
+  height:100px;
+  background:#eeeeee;
+  margin-top:1px;
+}
+.my_header1{
+  margin:0 auto;
+  width:1200px;
+}
+.site1{
+  margin-top: 35px;
+}
+.site{
+  float:right;
+  margin-top:-94px;
+}
+
+
+ul{ list-style: none;} 	
+.wrap{width: 888px;height: 30px;
+ margin-left:280px;
+ margin-top:-17px;
+ position: relative;
+  } 
+ .wrap>ul>li{float: left;margin-right: 67px;position: relative;} 
+.wrap a{display: block;width: 100px;height: 30px;line-height: 30px; 				        text-decoration:none;  font-weight: bold; 
+ color: black; 
+ text-align: center;}
+ .wrap li ul{position: absolute;top: 30px;
+ display: none; 			} 	
+ .wrap>ul>li>ul>li{
+   margin-left:18px;
+   margin-top:5px;
+ }
+ .wrap>ul>li>ul{
+   background:rgba(255,255,255,0.8);
+   z-index:100;
+ }
+ .wrap>ul>li>ul>li:hover{
+   background:#cc4954;
+  
+ }
+ #xiala{
+   width:1200px;
+   height:526px;
+   left:-280px;
+   top: 32px;
+   position: absolute;
+   background:rgba(256,256,256,0.9);
+
+  display:none;
+  z-index:1000;
+ }
+ #xiala table {
+  width:1200px;
+   height:526px;
+ }
+ #xiala table tr td img{
+   transition:0.5s
+ }
+ #xiala table img:hover{
+  transform:translateY(10px)
+ }

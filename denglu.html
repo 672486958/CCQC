@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div.c1{width:708px;height:425px;    position: relative;
+       top:100px;left:312.5px; border: 1px solid red;
+      }
+    
+    div.c2{
+      width:708px;height:54px; 
+    background: #cd1d1d;
+    color: #fff; line-height: 54px;
+    font-size: 24px;}
+    .c2_1{margin-left:47%;}
+     .uname ,.upwd{width:273px;height:37px; margin:26px  5px; margin-left:10px;}
+   .c3{  color: #333; font-size: 18px;}  
+   .yz{width:165px; height:37px}
+   .box{margin:26px 20px;}
+   .add{
+     margin-left:50px;
+     text-decoration: none;
+     background:#cd1d1d ;
+         display: block;
+    width: 179px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-align: center;
+    border: none;}
+  </style>
+</head>   
+<body>  
+    <div class="c1">
+      <div class="c2"> 
+        <span class="c2_1">登录</span>
+      </div>
+      <div class="c3">
+     <span>账号:</span> <input class="uname" type="text" placeholder="密码为3到9位">
+       <span class="aaa"></span> <br>
+      <span>密码:</span>  <input class="upwd" type="password" placeholder="密码位6到8位" >
+       <span class="bbb"></span>
+      </div>
+      <input class="box" type="checkbox">记住密码  <input class="box" type="checkbox">忘记密码?
+      <a href="#" class="add">登录</a>
+    </div>
+     
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+  
+
+
+    $(".uname").blur(function(){
+			val(this,3,9,"用户密码必须介于3~9位之间!");
+		})
+    function val(txt,min,max,msg){
+			 
+		$(".aaa").html(function(){
+				var length=$(".uname").val().length;
+				if(length>=min&&length<=max){
+					return `<img src='img/ok.png'>`
+				}else{
+					return `<img src='img/err.png'>${msg}`
+				}
+			});
+		}
+
+
+
+
+    $(".upwd").blur(function(){
+			vali(this,6,8,"用户密码必须介于6~8位之间!");
+		})
+    function vali(txt,min,max,msg){
+			 
+		$(".bbb").html(function(){
+				var length=$(".upwd").val().length;
+				if(length>=min&&length<=max){
+					return `<img src='img/ok.png'>`
+				}else{
+					return `<img src='img/err.png'>${msg}`
+				}
+			});
+		}
+    </script> 
+</body>
+</html>
